@@ -1,0 +1,19 @@
+<ion-content fullscreen class="ion-padding">
+    <ion-card>
+        <ion-card-content>
+            <qrcode
+                [qrdata]="data.toString()"
+                [errorCorrectionLevel]="'H'"
+            ></qrcode>
+            <h2 class="success">Done!</h2>
+            <h2>
+                Use this QR to check in your reservation with the restaurant
+                waiter.
+            </h2>
+
+            <ion-button (click)="handleBack()" color="primary" expand="full">
+                Continue
+            </ion-button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

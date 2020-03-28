@@ -1,0 +1,22 @@
+::ng-deep {
+    .qrcode {
+        canvas {
+            height: 50% !important;
+            width: 100% !important;
+        }
+    }
+}
+
+ion-card {
+    h2 {
+        margin: 2em;
+        &.success {
+            width: min-content;
+            border-bottom: 3px solid orange;
+        }
+    }
+
+    ion-button {
+        margin: 2em;
+    }
+}
